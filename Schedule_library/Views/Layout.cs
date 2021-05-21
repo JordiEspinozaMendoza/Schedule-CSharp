@@ -18,7 +18,7 @@ namespace Schedule_library.Views
         {
             InitializeComponent();
             this.idUser = idUser;
-            OpenChildForm(new RegisterItem(this.idUser));
+            OpenChildForm(new Home(this.idUser));
         }
         private void OpenChildForm(Form childForm)
         {
@@ -46,6 +46,12 @@ namespace Schedule_library.Views
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             OpenChildForm(new EditItem(this.idUser));
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Home(this.idUser));
+
         }
     }
 }

@@ -16,3 +16,4 @@ C:\Users\dell\source\repos\Schedule_library\Schedule_library\obj\Debug\Schedule_
 C:\Users\dell\source\repos\Schedule_library\Schedule_library\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\dell\source\repos\Schedule_library\Schedule_library\obj\Debug\Schedule_library.Views.EditItem.resources
 C:\Users\dell\source\repos\Schedule_library\Schedule_library\obj\Debug\Schedule_library.Views.RegisterItem.resources
+C:\Users\dell\source\repos\Schedule_library\Schedule_library\obj\Debug\Schedule_library.Views.Home.resources

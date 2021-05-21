@@ -31,6 +31,7 @@ namespace Schedule_library.Views
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Layout));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.buttonAdd = new FontAwesome.Sharp.IconButton();
             this.buttonRegister = new FontAwesome.Sharp.IconButton();
             this.panelChild = new System.Windows.Forms.Panel();
@@ -40,6 +41,7 @@ namespace Schedule_library.Views
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(50)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.buttonAdd);
             this.panel1.Controls.Add(this.buttonRegister);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -47,6 +49,21 @@ namespace Schedule_library.Views
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(399, 54);
             this.panel1.TabIndex = 0;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 24;
+            this.iconButton1.Location = new System.Drawing.Point(12, 12);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(32, 37);
+            this.iconButton1.TabIndex = 2;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // buttonAdd
             // 
@@ -56,7 +73,7 @@ namespace Schedule_library.Views
             this.buttonAdd.IconColor = System.Drawing.Color.White;
             this.buttonAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.buttonAdd.IconSize = 24;
-            this.buttonAdd.Location = new System.Drawing.Point(12, 12);
+            this.buttonAdd.Location = new System.Drawing.Point(50, 11);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(32, 37);
             this.buttonAdd.TabIndex = 1;
@@ -71,7 +88,7 @@ namespace Schedule_library.Views
             this.buttonRegister.IconColor = System.Drawing.Color.White;
             this.buttonRegister.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.buttonRegister.IconSize = 24;
-            this.buttonRegister.Location = new System.Drawing.Point(355, 12);
+            this.buttonRegister.Location = new System.Drawing.Point(355, 11);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(32, 37);
             this.buttonRegister.TabIndex = 0;
@@ -109,5 +126,6 @@ namespace Schedule_library.Views
         private FontAwesome.Sharp.IconButton buttonAdd;
         private FontAwesome.Sharp.IconButton buttonRegister;
         private System.Windows.Forms.Panel panelChild;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

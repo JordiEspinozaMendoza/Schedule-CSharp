@@ -34,6 +34,12 @@ namespace Schedule_library.Views
                     SystemAccess.Register register = new SystemAccess.Register(textBox1.Text, textBox2.Text);
                     register.EncryptPassword();
                     register.RegisterUser();
+                    if (register.complete)
+                    {
+                        this.Hide();
+                        FormLoginRegister login = new FormLoginRegister();
+                        login.Show();
+                    }
                 }
                 else
                     MessageBox.Show("Ambas contraseñas deben de coincidir");
